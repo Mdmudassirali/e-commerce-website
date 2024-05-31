@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+font-family: Verdana, sans-serif;
+ background-image: url("./img/bg1.png" );
+ background-color: rgba(255,255,255,0.9);
+ background-blend-mode: lighten;
+}
+html {
+overflow: scroll;
+overflow-x: hidden;
+box-sizing: border-box;
+}
+::-webkit-scrollbar {
+width: 0px;}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top:0;
+  left:0;
+
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 1s;
+}
+
+.topnav a.active {
+  background-color: #04d4b6;
+  color: white;
+}
+.topnav a.log{
+  float: right;
+  background-color: #04d4b6;
+  color: white;
+}
+.topnav a.log:hover{
+  background-color: #ddd;
+  color: black;
+  transition: 1s;
+}
+
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  background-color: #ffffff;
+}
+
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 4px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  background-color: white;
+  margin-top: 0;
+}
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+h2{
+
+  margin-top: 0px;
+}
+.cards:hover{
+  transform: translate(0, -10px);
+  box-shadow: 7px 5px 25px black;
+}
+</style>
+</head>
+<body>
+  <div class="topnav">
+      <a  href="newhome.html">Home</a>
+      <a href="latest.html">Latest</a>
+      <a  href="contact.html">Contact</a>
+      <a class="active" href="#about">About</a>
+      <a class="log" href="index.html" >LOG OUT</a>
+    </div>
+  <br><br><br>
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p></p>
+  <p>Lee - The Legendary Denim Brand Since 1889
+Lee is the signature of quality, innovation and durability.  Following with the establishment of 'H.D. Lee Mercantile Company' by Henry David Lee in Kansas, United States, Lee becomes a legendary denim brand which continues making history by its product innovations, such as the world's first-ever zip fly jeans - 101Z in 1926, iconic 'Hair-on-hide' leather label and 'Lazy S' back pocket stitching.  From the launch of the 1st Lee bib to the 13oz  '101' cowboy jeans, Lee demonstrates the passion of innovation over 120 years, transforming from a practical-and-durable-workwear maker to a contemporary-and-trendy fashion giant.</p>
+</div>
+<br>
+<h2 style="text-align:center" >Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="cards">
+      <img src="./img/pf3.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@gmail.com</p>
+        <p><button class="button"onclick="window.location.href='contact.html';">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="cards">
+      <img src="./img/pf2.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@gmail.com</p>
+        <p><button class="button"onclick="window.location.href='contact.html';">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="cards">
+      <img src="./img/pf3.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@gmail.com</p>
+        <p><button class="button"onclick="window.location.href='contact.html';">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

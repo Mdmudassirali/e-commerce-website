@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+.hero{
+    width: 100%;
+}
+.row{
+    width: 90%;
+    height: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col{
+    flex-basis:50%;
+}
+.slider{
+    height: 725px;
+    display: flex;
+}
+.product img{
+    height: 19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.product img:hover{
+    opacity: 1;
+}
+
+
+.preview img{
+    height: 100%;
+}
+p{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.brand{
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin-left: 10px;
+}
+h2{
+    font-size: 45px;
+    color: #555;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.rating{
+    display: flex;
+    height: 15px;
+    margin-left: 10px;
+}
+.rating .fa{
+    color: #008000;
+    margin-left: 10px;
+}
+.price{
+    color: #fe980f;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+}
+button{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #fe980f;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 10px;
+}
+button .fa{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+html {
+overflow: scroll;
+overflow-x: hidden;
+}
+::-webkit-scrollbar {
+width: 0px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 1s;
+}
+
+.topnav a.active {
+  background-color: #04d4b6;
+  color: white;
+}
+.topnav a.log{
+  float: right;
+  background-color: #04d4b6;
+  color: white;
+}
+a img{
+  margin-right: 7px;
+  height: 15px;
+}
+body{
+ background-image: url("./img/bg1.png" );
+ background-color: rgba(255,255,255,0.9);
+ background-blend-mode: lighten;
+}
+button{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
